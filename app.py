@@ -29,7 +29,7 @@ app.config['RECAPTCHA_PUBLIC_KEY'] = os.getenv('RECAPTCHA_PUBLIC_KEY')
 app.config['RECAPTCHA_PRIVATE_KEY'] = os.getenv('RECAPTCHA_PRIVATE_KEY')
 
 
-# FUNCTIONS
+## FUNCTIONS
 def requires_roles(*roles):
     def wrapper(f):
         @wraps(f)
